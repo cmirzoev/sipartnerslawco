@@ -1,12 +1,52 @@
 
+    
 
 const servicesData = {
+    migration: {
+        icon: "🛂",
+        title: "Миграционные вопросы",
+        description: `
+            <h3>Помощь иностранным гражданам и их работодателям</h3>
+            <p><strong>Быстрое и законное решение миграционных задач.</strong> Поможем оформить все необходимые документы, избежать штрафов и депортации.</p>
+            
+            <h3>Основные услуги:</h3>
+            <ul>
+                <li>Обжалование решений УВМ МВД (отказ в РВП/ВНЖ, выдворение)</li>
+                <li>Восстановление миграционного статуса</li>
+            </ul>
+            
+            <h3>Для работодателей:</h3>
+            <ul>
+                <li>Уведомления о приёме/увольнении иностранца</li>
+                <li>Помощь при проверках МВД и прокуратуры</li>
+                <li>Разрешение на привлечение иностранных работников</li>
+            </ul>
+            
+            <h3>Дополнительно:</h3>
+            <ul>
+                <li>Обжалование решений УВМ МВД (отказ в РВП/ВНЖ, выдворение)</li>
+                <li>Восстановление миграционного статуса</li>
+            </ul>
+            
+            <h3>Стоимость:</h3>
+            <p><strong>от 2 000 ₽</strong> — консультация и подготовка типовых документов<br>
+            <h3>Гарантия:</h3>
+            <p>✅ <strong>Фиксированная цена</strong> — без скрытых доплат.<br>
+            ✅ <strong>Сопровождение до результата</strong> — помогаем даже при отказах.</p>
+            
+            <div class="modal-buttons1">
+                <button class="btn-primary1" onclick="location.href='#contacts_form'; closeModal();">Заказать услугу</button>
+                <button class="btn-secondary1" onclick="closeModal()">Закрыть</button>
+            </div>
+        `
+    }
+,
     arbitrage: {
         icon: "⚖️",
         title: "Арбитраж и суды",
         description: `
             <h3>Полное юридическое сопровождение</h3>
-            <p><strong>Профессиональная защита интересов в арбитражных судах всех инстанций.</strong> Наши адвокаты имеют успешный опыт ведения дел в арбитражных судах всех инстанций, включая Верховный Суд РФ. За нашими плечами более 500 выигранных дел.</p>
+            <p><strong>Профессиональная защита интересов в арбитражных судах всех инстанций.</strong> Наша команда имеет успешный опыт ведения дел в арбитражных судах всех инстанций, включая Верховный Суд РФ.</p>
             
             <h3>Что входит в услугу:</h3>
             <ul>
@@ -25,7 +65,7 @@ const servicesData = {
             ✓ Экономия времени и денег</p>
             
             <h3>Стоимость:</h3>
-            <p><strong>от 50 000 ₽</strong> — фиксированная цена за ведение дела "под ключ". Возможна оплата поэтапно.</p>
+            <p><strong>от 30 000 ₽</strong> — фиксированная цена за ведение дела "под ключ". Возможна оплата поэтапно.</p>
             
             <h3>Сроки:</h3>
             <p>от 2 месяцев в зависимости от сложности дела</p>
@@ -134,8 +174,8 @@ const servicesData = {
             </ul>
             
             <h3>Стоимость:</h3>
-            <p><strong>от 40 000 ₽</strong> — полное сопровождение сделки<br>
-            <strong>от 15 000 ₽</strong> — юридическая проверка объекта</p>
+            <p><strong>от 10 000 ₽</strong> — полное сопровождение сделки<br>
+            <strong>от 5 000 ₽</strong> — юридическая проверка объекта</p>
             
             <h3>Гарантия:</h3>
             <p>🛡️ <strong>Страховка сделки</strong> — в случае выявления юридических проблем после покупки мы компенсируем убытки до 5 000 000 ₽.</p>
@@ -188,39 +228,97 @@ const servicesData = {
             </div>
         `
     },
-    tax: {
-        icon: "🛡️",
-        title: "Налоговое право и защита бизнеса",
-        description: `
-            <h3>Снижаем налоги законно и защищаем от налоговой</h3>
-            <p><strong>Минимизируйте налоговые риски и платите меньше.</strong> Наши специалисты имеют опыт работы в ФНС и знают все схемы проверок изнутри.</p>
-            
-            <h3>Наши услуги:</h3>
-            <ul>
-                <li><strong>Налоговое планирование и оптимизация</strong> — подбор законных схем снижения нагрузки на 30-50%</li>
-                <li><strong>Сопровождение налоговых проверок</strong> — выездных и камеральных, подготовка возражений</li>
-                <li><strong>Обжалование решений ФНС</strong> — в вышестоящем органе, арбитражном суде</li>
-                <li><strong>Защита при доначислениях</strong> — оспаривание штрафов, пени, требований об уплате</li>
-                <li><strong>Аудит налоговой безопасности</strong> — выявление рисков, разработка рекомендаций</li>
-                <li><strong>Блокировка счетов</strong> — снятие незаконных ограничений</li>
-            </ul>
-            
-            <h3>Стоимость:</h3>
-            <p><strong>от 25 000 ₽</strong> — разовая консультация и анализ<br>
-            <strong>от 80 000 ₽/мес</strong> — полное налоговое сопровождение бизнеса</p>
-            
-            <h3>Результат:</h3>
-            <p>✔ Снижение доначислений на 70-90%<br>
-            ✔ Отмена штрафов и пеней<br>
-            ✔ Спокойное ведение бизнеса без риска блокировки<br>
-            ✔ Оптимальная налоговая нагрузка</p>
-            
-            <div class="modal-buttons1">
-                <button class="btn-primary1" onclick="location.href='#contacts_form', closeModal()">Получить консультацию</button>
-                <button class="btn-secondary1" onclick="closeModal()">Закрыть</button>
-            </div>
-        `
-    }
+family: {
+    icon: "💑",
+    title: "Семейное право",
+    description: `
+        <h3>Решаем семейные споры быстро и с минимальными потерями</h3>
+        <p><strong>Защитим ваши права и интересы в любых семейных вопросах.</strong> Бережём нервы, деньги и время. Работаем во всех инстанциях.</p>
+        
+        <h3>Основные услуги:</h3>
+        <ul>
+            <li><strong>Расторжение брака</strong> — через ЗАГС (при взаимном согласии, без детей) или суд (при наличии споров, детей). Полное сопровождение от подачи заявления до получения решения.</li>
+            <li><strong>Раздел совместно нажитого имущества</strong> — квартиры, машины, бизнес, дачи, счета. Поможем сохранить справедливость и уменьшить судебные издержки.</li>
+            <li><strong>Алименты</strong> — взыскание в твёрдой денежной сумме или долях от дохода, уменьшение / увеличение размера, освобождение от уплаты, задолженность.</li>
+            <li><strong>Определение места жительства ребенка</strong> — составление мировых соглашений, представление интересов в суде, привлечение органов опеки.</li>
+            <li><strong>Порядок общения с ребенком</strong> — график встреч, ограничение / лишение родительских прав, восстановление в правах.</li>
+            <li><strong>Оспаривание и установление отцовства</strong> — добровольное или через суд, генетическая экспертиза.</li>
+            <li><strong>Брачный договор и соглашение о разделе имущества</strong> — составление, заверение, изменение, признание недействительным.</li>
+            <li><strong>Защита от домашнего насилия</strong> — судебные приказы, изолирование обидчика, консультации.</li>
+        </ul>
+        
+        <h3>Дополнительные услуги:</h3>
+        <ul>
+            <li>Признание брака недействительным</li>
+            <li>Раздел долгов супругов (ипотека, кредиты)</li>
+            <li>Выдел доли из общего имущества</li>
+            <li>Обжалование решений судов по семейным делам</li>
+            <li>Представление интересов в опеке и попечительстве</li>
+        </ul>
+        
+        <h3>Стоимость:</h3>
+        <p><strong>от 3 000 ₽</strong> — устная консультация и первичный анализ документов<br>
+        <strong>от 10 000 ₽</strong> — подготовка иска о расторжении брака / взыскании алиментов<br>
+        <strong>от 25 000 ₽</strong> — раздел имущества или спор о детях «под ключ» (включая суд)<br>
+        <strong>от 40 000 ₽</strong> — полное ведение сложного дела (апелляция, кассация)</p>
+        
+        <h3>Почему мы:</h3>
+        <p>✅ <strong>Фиксированная стоимость</strong> — никаких доплат по ходу дела.<br>
+        ✅ <strong>Досудебное урегулирование</strong> — помогаем сохранить семью или разойтись мирно.<br>
+        ✅ <strong>Опыт в судах общей юрисдикции</strong> — выигранные дела по алиментам, разделу и определению детей.<br>
+        ✅ <strong>Индивидуальный подход</strong> — учитываем интересы всех членов семьи, особенно детей.</p>
+        
+        <div class="modal-buttons1">
+            <button class="btn-primary1" onclick="location.href='#contacts_form'; closeModal();">Записаться на консультацию</button>
+            <button class="btn-secondary1" onclick="closeModal()">Закрыть</button>
+        </div>
+    `
+},
+autolaw: {
+    icon: "🚗",
+    title: "Автоюрист",
+    description: `
+        <h3>Полная юридическая защита автомобилистов</h3>
+        <p><strong>Решаем любые проблемы, связанные с автомобилем, ДТП, ГИБДД и страховыми.</strong> Экономим ваши нервы, время и деньги.</p>
+        
+        <h3>Что мы делаем:</h3>
+        <ul>
+            <li><strong>Споры со страховыми компаниями</strong> — взыскание выплат по ОСАГО/КАСКО, неустойки, штрафы, компенсация морального вреда.</li>
+            <li><strong>ДТП и европротокол</strong> — правильное оформление, оспаривание вины, помощь в получении страховой выплаты.</li>
+            <li><strong>Обжалование штрафов ГИБДД</strong> — отмена незаконных постановлений (камеры, превышение, парковка, разметка).</li>
+            <li><strong>Лишение водительских прав</strong> — за езду в нетрезвом виде, выезд на встречку, отказ от медосвидетельствования. Сокращаем срок, помогаем вернуть права досрочно.</li>
+            <li><strong>Возврат прав после лишения</strong> — прохождение экзамена, получение удостоверения без задержек.</li>
+            <li><strong>Защита в суде по делам об административных правонарушениях</strong> — превышение скорости, тонировка, ремень, перегруз, СИМ.</li>
+            <li><strong>Споры с автосалонами и дилерами</strong> — возврат некачественного авто, гарантийный ремонт, обмен, расторжение договора.</li>
+            <li><strong>Растаможка и регистрация авто</strong> — помощь с документами, пошлинами, прохождением таможни.</li>
+            <li><strong>Снятие ограничений и арестов</strong> — с автомобиля, запрет на регистрационные действия.</li>
+        </ul>
+        
+        <h3>Дополнительно:</h3>
+        <ul>
+            <li>Независимая техническая экспертиза (ущерб, стоимость ремонта, трасология)</li>
+            <li>Помощь на месте ДТП — выезд юриста, составление схемы, фиксация нарушений</li>
+            <li>Представление интересов в ГИБДД, прокуратуре, судах всех инстанций</li>
+            <li>Обжалование решений о привлечении к ответственности (ст. 12.8, 12.26, 12.9 КоАП РФ и др.)</li>
+        </ul>
+        
+        <h3>Стоимость:</h3>
+        <p><strong>от 3 000 ₽</strong> — консультация и анализ документов<br>
+        <strong>от 7 000 ₽</strong> — обжалование штрафа или лишения прав под ключ<br>
+        <strong>от 12 000 ₽</strong> — полное ведение дела о ДТП или спора со страховой (судебное представительство)<br>
+        <strong>от 25 000 ₽</strong> — возврат прав, сокращение срока лишения</p>
+        
+        <h3>Гарантия:</h3>
+        <p>✅ <strong>Фиксированная цена</strong> — без скрытых доплат.<br>
+        ✅ <strong>Опыт в судах</strong> — десятки выигранных дел по лишению прав и ДТП.<br>
+        ✅ <strong>Результат в срок</strong> — ведём дело до полного исполнения.</p>
+        
+        <div class="modal-buttons1">
+            <button class="btn-primary1" onclick="location.href='#contacts_form'; closeModal();">Записаться на консультацию</button>
+            <button class="btn-secondary1" onclick="closeModal()">Закрыть</button>
+        </div>
+    `
+}
 };
 
 // ========== ФУНКЦИИ ДЛЯ РАБОТЫ С МОДАЛЬНЫМ ОКНОМ ==========
@@ -479,4 +577,105 @@ document.getElementById('open-map').addEventListener('click', (event) => {
     setTimeout(() => clearTimeout(timeout), 1000);
     
     event.preventDefault();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const track = document.querySelector('.carousel-track');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const dotsContainer = document.querySelector('.carousel-dots');
+    let cards = document.querySelectorAll('.review-card');
+    let currentIndex = 0;
+    let autoScrollInterval;
+
+    function updateDots() {
+        if (!dotsContainer) return;
+        dotsContainer.innerHTML = '';
+        cards.forEach((_, i) => {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (i === currentIndex) dot.classList.add('active');
+            dot.addEventListener('click', () => scrollToCard(i));
+            dotsContainer.appendChild(dot);
+        });
+    }
+
+    function scrollToCard(index) {
+        if (!cards.length || !track) return;
+        index = Math.min(Math.max(index, 0), cards.length - 1);
+        const card = cards[index];
+        if (card) {
+            // Прокручиваем только трек (горизонтальную область отзывов), а не всю страницу
+            const scrollLeft = card.offsetLeft - track.offsetLeft;
+            track.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+            currentIndex = index;
+            updateDots();
+            resetAutoScroll();
+        }
+    }
+
+    function scrollByDirection(direction) {
+        if (!track) return;
+        const scrollAmount = track.clientWidth * 0.9;
+        track.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+        resetAutoScroll();
+        setTimeout(() => {
+            const scrollLeft = track.scrollLeft;
+            let closestIndex = 0;
+            let minDiff = Infinity;
+            cards.forEach((card, idx) => {
+                const offset = card.offsetLeft - track.offsetLeft;
+                const diff = Math.abs(scrollLeft - offset);
+                if (diff < minDiff) {
+                    minDiff = diff;
+                    closestIndex = idx;
+                }
+            });
+            if (closestIndex !== currentIndex) {
+                currentIndex = closestIndex;
+                updateDots();
+            }
+        }, 300);
+    }
+
+    function resetAutoScroll() {
+        if (autoScrollInterval) clearInterval(autoScrollInterval);
+        autoScrollInterval = setInterval(() => {
+            if (cards.length) {
+                let nextIndex = (currentIndex + 1) % cards.length;
+                scrollToCard(nextIndex);
+            }
+        }, 5000);
+    }
+
+    function initCarousel() {
+        if (!track || !cards.length) return;
+        prevBtn.addEventListener('click', () => scrollByDirection(-1));
+        nextBtn.addEventListener('click', () => scrollByDirection(1));
+        track.addEventListener('scroll', () => {
+            clearTimeout(window.scrollEndTimer);
+            window.scrollEndTimer = setTimeout(() => {
+                const scrollLeft = track.scrollLeft;
+                let closestIndex = 0;
+                let minDiff = Infinity;
+                cards.forEach((card, idx) => {
+                    const offset = card.offsetLeft - track.offsetLeft;
+                    const diff = Math.abs(scrollLeft - offset);
+                    if (diff < minDiff) {
+                        minDiff = diff;
+                        closestIndex = idx;
+                    }
+                });
+                if (closestIndex !== currentIndex) {
+                    currentIndex = closestIndex;
+                    updateDots();
+                    resetAutoScroll();
+                }
+            }, 100);
+        });
+        updateDots();
+        resetAutoScroll();
+    }
+
+    initCarousel();
 });
